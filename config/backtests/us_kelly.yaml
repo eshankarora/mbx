@@ -1,0 +1,14 @@
+data:
+  cape: "datasets/cape_annual.csv"   # resolved against MBX_DATA_URI
+  rf:   "datasets/rf_annual.csv"
+  spx:  "datasets/spx_annual.csv"
+params:
+  gamma: 2.0
+  mu0: 0.05
+  rebalance: "A"            # A=annual (sample uses annual data)
+  vol_window_years: 5
+  vol_floor: 0.10
+  clamp: [0.0, 1.0]
+  use_rf_as_cash: true
+outputs:
+  dir: "runs/us_kelly/"
