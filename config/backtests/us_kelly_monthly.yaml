@@ -1,0 +1,14 @@
+data:
+  ff_factors_monthly: "datasets/ken_french/ff_factors_monthly.csv"
+  cape_monthly:       "datasets/shiller/cape_monthly.csv"
+params:
+  gamma: 2.0
+  mu0: 0.05
+  rebalance: "M"
+  vol_window_months: 60
+  vol_floor: 0.10
+  clamp: [0.0, 1.0]
+  use_rf_as_cash: true
+  dca_monthly: 0.0
+outputs:
+  dir: "runs/us_kelly_monthly/"
